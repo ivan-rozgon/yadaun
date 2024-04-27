@@ -120,7 +120,7 @@ def profile():
         user.name = form.name.data
         user.channels = form.channels.data
         db_sess.commit()
-        return redirect("/profile")
+        return redirect("/")
     return render_template("profile.html", title="Профиль", form=form)
 
 
